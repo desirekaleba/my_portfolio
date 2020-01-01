@@ -1,0 +1,14 @@
+{
+  "name": "my_portofolio",
+  "version": "1.0.0",
+  "description": "My portofolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Desire Kaleba",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
