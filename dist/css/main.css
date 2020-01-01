@@ -13,7 +13,8 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position: center center; }
-    body#bg-img .overlay {
+    body#bg-img:after {
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
