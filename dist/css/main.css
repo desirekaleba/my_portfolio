@@ -257,6 +257,11 @@
       transition: all 0.6s ease-out;
       transform: scaleX(1.1); }
 
+.contacts .contact {
+  border-top: 2px solid #1ab2ee; }
+  .contacts .contact:last-child {
+    border-bottom: 2px solid #1ab2ee; }
+
 * {
   box-sizing: border-box; }
 

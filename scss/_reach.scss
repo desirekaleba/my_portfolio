@@ -1,0 +1,10 @@
+.contacts {
+    .contact {
+
+        border-top: 2px solid $secondary-color;
+        //border-bottom: 2px solid $secondary-color;
+        &:last-child {
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+}
