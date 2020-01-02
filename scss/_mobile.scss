@@ -68,11 +68,18 @@
             width: 50%;
         }
     }
+
     main#about .skills {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-top: auto;
+    }
+
+    main#my_work .works {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
 
@@ -102,6 +109,11 @@
 
 @media screen and (max-width: 618px) {
     main#about .skills {
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    main#my_work .works {
         grid-template-columns: repeat(2, 1fr);
         
     }
