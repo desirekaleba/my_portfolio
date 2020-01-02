@@ -1,0 +1,69 @@
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio'
+    'skills skills';
+    grid-template-columns: repeat(2, 1fr);
+
+        .bio-img {
+            grid-area: bioimage;
+            margin: auto;
+            border-radius: 50%;
+            border: 2px solid $secondary-color;
+
+            @include easeOut();
+        }
+
+        .bio {
+            grid-area: bio;
+            font-size: 1.5rem;
+            @include easeOut();
+            & p {
+                font-weight: 300;
+                text-align: left;
+                word-spacing: normal;
+                transition-delay: 1s;
+            }
+        }
+
+        .skills-container {
+            grid-area: skills;
+
+            .skills {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-columns: repeat(5, 1fr);
+
+                @include easeOut();
+
+                .skill {
+
+                    & > h3, & .progress {
+                        @include easeOut();
+                    }
+
+                    .progress {
+                        @include easeOut();
+                        height: 10px;
+                    }
+                }
+
+            }
+        }
+
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 5);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+@for $x from 1 through 11 {
+    .skill:nth-child(#{$x}){
+        transition-delay: $x * 0.1s;
+    }
+}

@@ -68,3 +68,9 @@ $background-opacity: 0.8;
         @content;
     }
 }
+
+@mixin aboutSkills {
+    @media screen and (max-width: 955px){
+        @content;
+    }
+}
